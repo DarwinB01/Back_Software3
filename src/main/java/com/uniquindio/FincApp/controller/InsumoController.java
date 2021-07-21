@@ -19,7 +19,7 @@ import com.uniquindio.FincApp.dto.EmployeeDTO;
 import com.uniquindio.FincApp.dto.InsumoDTO;
 import com.uniquindio.FincApp.service.IInsumoService;
 
-@CrossOrigin(origins = { "http://localhost:4200" })
+@CrossOrigin(origins = { "https://marketplace-23e72.web.app" })
 @RestController
 @RequestMapping("/insumo")
 public class InsumoController {

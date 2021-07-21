@@ -9,7 +9,7 @@ import com.uniquindio.FincApp.login.AuthenticationBean;
 
 @RestController
 @RequestMapping("/api/v1")
-@CrossOrigin(origins="http://localhost:4200")
+@CrossOrigin(origins="https://marketplace-23e72.web.app")
 public class BasicAuthController {
 	
 	@GetMapping(path = "/basicauth")

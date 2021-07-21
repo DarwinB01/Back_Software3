@@ -17,7 +17,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.uniquindio.FincApp.dto.ControlDTO;
 import com.uniquindio.FincApp.service.IControlService;
 
-@CrossOrigin(origins = { "http://localhost:4200" })
+@CrossOrigin(origins = { "https://marketplace-23e72.web.app" })
 @RestController
 @RequestMapping("/control")
 public class ControlController {

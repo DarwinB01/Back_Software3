@@ -12,7 +12,7 @@ import com.uniquindio.FincApp.login.Greeting;
 
 @RestController
 @RequestMapping("/api/v1")
-@CrossOrigin(origins = "http://localhost:4200")
+@CrossOrigin(origins = "https://marketplace-23e72.web.app")
 public class GreetingController {
 	
 	private static final String template = "Hello, %s!";
