@@ -20,7 +20,7 @@ import com.uniquindio.FincApp.dto.EmployeeDTO;
 import com.uniquindio.FincApp.service.ICultivationService;
 import com.uniquindio.FincApp.service.IEmployeeService;
 
-@CrossOrigin(origins = { "https://marketplace-23e72.web.app" })
+@CrossOrigin(origins = { "https://trusting-ride-186e72.netlify.app" })
 @RestController
 @RequestMapping("/employee")
 public class EmployeeController {

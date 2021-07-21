@@ -18,7 +18,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.uniquindio.FincApp.dto.HarvestDTO;
 import com.uniquindio.FincApp.service.IHaverstService;
 
-@CrossOrigin(origins = { "https://marketplace-23e72.web.app" })
+@CrossOrigin(origins = { "https://trusting-ride-186e72.netlify.app" })
 @RestController
 @RequestMapping("/harvest")
 public class HarvestController {

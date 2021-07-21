@@ -19,7 +19,7 @@ import com.uniquindio.FincApp.dto.EmployeeDTO;
 import com.uniquindio.FincApp.dto.PositionDTO;
 import com.uniquindio.FincApp.service.IPositionService;
 
-@CrossOrigin(origins = { "https://marketplace-23e72.web.app" })
+@CrossOrigin(origins = { "https://trusting-ride-186e72.netlify.app" })
 @RestController
 @RequestMapping("/position")
 public class PositionController {

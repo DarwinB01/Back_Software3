@@ -19,7 +19,7 @@ import com.uniquindio.FincApp.dto.EmployeeDTO;
 import com.uniquindio.FincApp.dto.InsumoDTO;
 import com.uniquindio.FincApp.service.IInsumoService;
 
-@CrossOrigin(origins = { "https://marketplace-23e72.web.app" })
+@CrossOrigin(origins = { "https://trusting-ride-186e72.netlify.app" })
 @RestController
 @RequestMapping("/insumo")
 public class InsumoController {
