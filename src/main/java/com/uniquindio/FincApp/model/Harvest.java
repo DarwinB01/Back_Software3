@@ -30,21 +30,16 @@ public class Harvest implements Serializable {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long idcosecha;
-
 	@Column(nullable = true)
 	private int cantidad;
-
 	@Column(nullable = true)
 	private Date fecha;
-
 	@Column(nullable = true)
 	private Long valor;
-
 	@ManyToOne
 	@NotNull
 	@JoinColumn(name = "cultivo_idcultivo")
 	private Cultivation cultivo;
-
 	public Long getIdcosecha() {
 		return idcosecha;
 	}

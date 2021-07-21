@@ -4,14 +4,9 @@ import java.util.List;
 
 import com.uniquindio.FincApp.dto.HarvestDTO;
 
-public interface IHaverstService {
-	
-	public void deleteById(Long id);
-	
+public interface IHaverstService {	
+	public void deleteById(Long id);	
 	public List<HarvestDTO> findAll();
-	
 	public HarvestDTO findById(Long id);
-
 	public HarvestDTO saveHarvest(HarvestDTO haverst);
-
 }

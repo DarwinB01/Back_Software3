@@ -1,6 +1,5 @@
 package com.uniquindio.FincApp.controller;
 
-import java.util.Date;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -14,7 +13,6 @@ import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-
 import com.uniquindio.FincApp.dto.HarvestDTO;
 import com.uniquindio.FincApp.service.IHaverstService;
 
@@ -49,12 +47,9 @@ public class HarvestController {
 
 	@PutMapping("/cosechas/{id}")
 	public HarvestDTO updateEmployee(@RequestBody HarvestDTO peticion, @PathVariable Long id) {
-
 		HarvestDTO harvestDTO = harvestService.findById(id);
-
 		HarvestDTO harvestUpdated = null;
 		if (harvestDTO != null) {
-
 			try {
 				harvestDTO.setCantidad(peticion.getCantidad());
 				harvestDTO.setFecha(peticion.getFecha());
@@ -68,5 +63,4 @@ public class HarvestController {
 		}
 		return harvestUpdated;
 	}
-
 }

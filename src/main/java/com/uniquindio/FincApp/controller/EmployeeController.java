@@ -14,10 +14,8 @@ import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-
 import com.uniquindio.FincApp.dto.EmailRequestDTO;
 import com.uniquindio.FincApp.dto.EmployeeDTO;
-import com.uniquindio.FincApp.service.ICultivationService;
 import com.uniquindio.FincApp.service.IEmployeeService;
 
 @CrossOrigin(origins = { "https://trusting-ride-186e72.netlify.app" })
@@ -51,9 +49,7 @@ public class EmployeeController {
 
 	@PutMapping("/trabajadores/{cedula}")
 	public EmployeeDTO updateEmployee(@RequestBody EmployeeDTO peticion, @PathVariable Long cedula) {
-
 		EmployeeDTO employeeDTO = employeeService.findById(cedula);
-
 		EmployeeDTO employeeUpdated = null;
 		if (employeeDTO != null) {
 
@@ -65,7 +61,6 @@ public class EmployeeController {
 				employeeDTO.setCultivo(peticion.getCultivo());
 				employeeDTO.setCargo(peticion.getCargo());
 				employeeDTO.setTelefono(peticion.getTelefono());
-
 				employeeUpdated = employeeService.saveEmployee(employeeDTO);
 				return employeeUpdated;
 			} catch (DataAccessException e) {

@@ -28,36 +28,27 @@ public class Estate implements Serializable {
 
 	@Id
 	private Long idfinca;
-
 	@NotNull
 	@Column(nullable = false)
 	private String nombre;
-
 	@NotNull
 	private String ubicacion;
-
 	@NotNull
 	@Column(nullable = false)
 	private String hectareas;
-
 	@NotNull
 	@Column(nullable = false)
 	private int arriendo;
-
 	@NotNull
 	@Column(nullable = false)
 	private int servicios;
-
 	@NotNull
 	@Column(nullable = false)
 	private String usuario_cedula;
-
 	@OneToMany(mappedBy = "finca", cascade = CascadeType.ALL)
 	private List<Employee> trabajadores;
-
 	@OneToMany(mappedBy = "finca", cascade = CascadeType.ALL)
 	private List<Insumo> insumos;
-
 	public Long getIdfinca() {
 		return idfinca;
 	}

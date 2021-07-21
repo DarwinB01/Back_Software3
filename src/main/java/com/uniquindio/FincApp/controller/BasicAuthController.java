@@ -6,10 +6,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import com.uniquindio.FincApp.login.AuthenticationBean;
 
-
 @RestController
 @RequestMapping("/api/v1")
-@CrossOrigin(origins="https://trusting-ride-186e72.netlify.app")
+@CrossOrigin(origins="https://trusting-ride-186e72.netlify.app")				
 public class BasicAuthController {
 	
 	@GetMapping(path = "/basicauth")

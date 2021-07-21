@@ -28,25 +28,19 @@ public class Control {
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private Long idcontrol;
-	
+	private Long idcontrol;	
 	@NotNull
 	@Column(nullable = false)
-	private String tipo;
-	
+	private String tipo;	
 	@NotNull
 	@Column(nullable = false)
 	private String nombre;
-
 	@Column(nullable = true)
-	private String descripcion;
-	
+	private String descripcion;	
 	@Column(nullable = true)
-	private Date fecha;
-	
+	private Date fecha;	
 	@Column(nullable = true)
-	private Long precio;
-	
+	private Long precio;	
 	@ManyToOne
 	@NotNull
 	@JoinColumn(name = "cultivo_idcultivo")

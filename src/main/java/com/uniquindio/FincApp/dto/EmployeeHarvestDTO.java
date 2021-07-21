@@ -2,37 +2,21 @@ package com.uniquindio.FincApp.dto;
 
 import java.util.Date;
 
-import javax.persistence.Column;
-import javax.persistence.Id;
-import javax.persistence.JoinColumn;
-import javax.persistence.ManyToOne;
-import javax.persistence.Temporal;
-import javax.persistence.TemporalType;
-
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonInclude.Include;
-import com.sun.istack.NotNull;
 import com.uniquindio.FincApp.model.Cultivation;
 
 @JsonInclude(Include.NON_NULL)
 public class EmployeeHarvestDTO {
 
 	private Long cedula;
-
 	private String nombre;
-
 	private String apellido;
-
 	private Long pagoPorDia;
-
 	private int diasDeTrabajo;
-
 	private Date fecha;
-
 	private Long cultivo;
-
 	private String telefono;
-
 	public EmployeeHarvestDTO(Long cedula, String nombre, String apellido, Long pagoPorDia, int diasDeTrabajo,
 			Date fecha, Cultivation cultivo, String telefono) {
 		super();

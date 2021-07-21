@@ -18,21 +18,16 @@ public class Insumo {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long idinsumo;
-
 	@NotNull
 	@Column(nullable = false)
 	private String tipo;
-
 	@NotNull
 	@Column(nullable = false)
 	private String nombre;
-
 	@Column(nullable = true)
 	private int cantidad;
-
 	@Column(nullable = true)
 	private Long precio;
-
 	@ManyToOne
 	@NotNull
 	@JoinColumn(name = "finca_idfinca")

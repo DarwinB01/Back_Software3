@@ -8,13 +8,9 @@ import com.fasterxml.jackson.annotation.JsonInclude.Include;
 public class CultivationDTO {
 
 	private Long idcultivo;
-
 	private String tipoCultivo;
-
 	private int cantidadDeMatas;
-
-	private Date fecha;
-	
+	private Date fecha;	
 	private String fechaFinal;
 
 	public CultivationDTO(Long idcultivo, String tipoCultivo, int cantidadDeMatas, Date fecha) {

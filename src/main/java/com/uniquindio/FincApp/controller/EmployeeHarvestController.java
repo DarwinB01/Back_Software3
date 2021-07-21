@@ -49,9 +49,7 @@ public class EmployeeHarvestController {
 
 	@PutMapping("/trabajadoresCosechas/{cedula}")
 	public EmployeeHarvestDTO updateEmployee(@RequestBody EmployeeHarvestDTO peticion, @PathVariable Long cedula) {
-
 		EmployeeHarvestDTO employeeDTO = employeeService.findById(cedula);
-
 		EmployeeHarvestDTO employeeUpdated = null;
 		if (employeeDTO != null) {
 
@@ -70,6 +68,5 @@ public class EmployeeHarvestController {
 			}
 		}
 		return employeeUpdated;
-	}
-	
+	}	
 }

@@ -18,19 +18,12 @@ import com.uniquindio.FincApp.model.Cultivation;
 public class HarvestDTO {
 
 	private Long idcosecha;
-
 	private int cantidad;
-
 	private Date fecha;
-
 	private Long valor;
-
-	private Long cultivo;
-	
+	private Long cultivo;	
 	private String nombreCultivo;
-
 	private String fechaFinal;
-	
 	public HarvestDTO(Long idcosecha, int cantidad, Date fecha, Long valor, Cultivation cultivation) {
 		super();
 		this.idcosecha = idcosecha;

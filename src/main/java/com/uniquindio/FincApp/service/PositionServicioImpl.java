@@ -23,7 +23,6 @@ public class PositionServicioImpl implements IPositionService {
 	private IPositionDao positionDao;
 	@Autowired
 	private IEmployeeDao employeeDao;
-
 	@Override
 	public void deleteById(Long idCargo) {
 		positionDao.deleteById(idCargo);

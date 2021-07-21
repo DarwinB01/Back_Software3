@@ -7,18 +7,10 @@ import org.springframework.data.domain.Pageable;
 import com.uniquindio.FincApp.dto.EmployeeDTO;
 
 
-public interface IEmployeeService {
-	
-	public void deleteById(Long cedula);
-	
-	public List<EmployeeDTO> findAll();
-	
+public interface IEmployeeService {	
+	public void deleteById(Long cedula);	
+	public List<EmployeeDTO> findAll();	
 	public EmployeeDTO findById(Long cedula);
-
 	public EmployeeDTO saveEmployee(EmployeeDTO employee);	
-	
 	public void sendEmail(List<EmployeeDTO> listClients, String subject, String content);
-	
-	
-
 }

@@ -7,14 +7,10 @@ import java.io.Serializable;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
 import com.sun.istack.NotNull;
-
-
 
 /**
  *Clase que representa a un usuario dentro de la finca
@@ -29,20 +25,16 @@ import com.sun.istack.NotNull;
 public class User implements Serializable{
 
 	@Id
-	private Long cedula;
-	
+	private Long cedula;	
 	@NotNull
 	@Column(nullable = false, unique = true)
-	private String correo;
-	
+	private String correo;	
 	@NotNull
 	@Column(nullable = false)
-	private String clave;
-	
+	private String clave;	
 	@NotNull
 	@Column(nullable = false)
 	private String nombre;
-
 	public Long getCedula() {
 		return cedula;
 	}

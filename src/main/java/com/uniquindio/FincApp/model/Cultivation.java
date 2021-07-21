@@ -32,29 +32,21 @@ public class Cultivation implements Serializable {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long idcultivo;
-
 	@NotNull
 	@Column(nullable = false)
 	private String tipoCultivo;
-
 	@Column(nullable = true)
 	private int cantidadDeMatas;
-
 	@Column(nullable = true)
 	private Date fecha;
-
 	@OneToMany(mappedBy = "cultivo", cascade = CascadeType.ALL)
 	private List<Employee> trabajadores;
-
 	@OneToMany(mappedBy = "cultivo", cascade = CascadeType.ALL)
 	private List<Harvest> cosechas;
-
 	@OneToMany(mappedBy = "cultivo", cascade = CascadeType.ALL)
-	private List<Control> controles;
-	
+	private List<Control> controles;	
 	@OneToMany(mappedBy = "cultivo", cascade = CascadeType.ALL)
-	private List<EmployeeHarvest> trabajadoresCosechas;
-	
+	private List<EmployeeHarvest> trabajadoresCosechas;	
 	public Long getIdcultivo() {
 		return idcultivo;
 	}

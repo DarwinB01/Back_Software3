@@ -7,17 +7,11 @@ import com.fasterxml.jackson.annotation.JsonInclude.Include;
 public class InsumoDTO {
 
 	private Long idinsumo;
-
 	private String tipo;
-
 	private String nombre;
-
 	private int cantidad;
-
 	private Long precio;
-
 	private Long finca;
-
 	public InsumoDTO(Long idinsumo, String tipo, String nombre, int cantidad, Long precio, Long finca) {
 		super();
 		this.idinsumo = idinsumo;

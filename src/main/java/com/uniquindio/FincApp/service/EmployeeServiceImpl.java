@@ -65,12 +65,10 @@ public class EmployeeServiceImpl implements IEmployeeService {
 
 		return employeeDTO;
 	}
-
 	@Override
 	public void deleteById(Long cedula) {
 		employeeDao.deleteById(cedula);
 	}
-
 	@Override
 	public List<EmployeeDTO> findAll() {
 		List<Employee> employee = new ArrayList<>();
@@ -86,13 +84,11 @@ public class EmployeeServiceImpl implements IEmployeeService {
 
 		return response;
 	}
-
 	@Override
 	public EmployeeDTO findById(Long cedula) {
 
 		return entityToDTO(employeeDao.findById(cedula).orElse(null));
 	}
-
 	public EmployeeDTO entityToDTO(Employee employee) {
 		EmployeeDTO employeeDTO = new EmployeeDTO();
 		employeeDTO.setFinca(employee.getFinca().getIdfinca());
@@ -110,13 +106,11 @@ public class EmployeeServiceImpl implements IEmployeeService {
 
 		return employeeDTO;
 	}
-
 	@Override
 	public void sendEmail(List<EmployeeDTO> listClients, String subject, String content) {
 		   for (EmployeeDTO c : listClients) 
 	        { 
 	            SimpleMailMessage email = new SimpleMailMessage();
-
 	            //recorremos la lista y enviamos a cada cliente el mismo correo
 	            email.setTo(c.getEmail());
 	            email.setSubject(subject);
@@ -124,8 +118,5 @@ public class EmployeeServiceImpl implements IEmployeeService {
 
 	            mailSender.send(email);
 	        }
-		   
-		
 	}
-
 }

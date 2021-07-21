@@ -21,8 +21,7 @@ public class EmployeeHarvestServiceImpl implements IEmployeeHarvestService {
 	@Autowired
 	private ICultivationDao cultivoDao;
 	@Autowired
-	ObjectMapper objectMapper;
-	
+	ObjectMapper objectMapper;	
 	@Override
 	public void deleteById(Long cedula) {
 		employeeHarvestDao.deleteById(cedula);

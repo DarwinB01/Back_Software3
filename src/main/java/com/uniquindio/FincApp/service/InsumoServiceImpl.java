@@ -23,7 +23,6 @@ public class InsumoServiceImpl implements IInsumoService {
 	private IEstateDao fincaDao;
 	@Autowired
 	ObjectMapper objectMapper;
-
 	@Override
 	public void deleteById(Long id) {
 		insumoDao.deleteById(id);

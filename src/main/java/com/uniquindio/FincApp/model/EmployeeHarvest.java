@@ -20,25 +20,19 @@ public class EmployeeHarvest implements Serializable {
 
 	@Id
 	private Long cedula;
-
 	@NotNull
 	@Column(nullable = false)
 	private String nombre;
-
 	@NotNull
 	@Column(nullable = false)
 	private String apellido;
-
 	@Column(nullable = true)
 	private Long pagoPorDia;
-
 	@Column(nullable = true)
 	private int diasDeTrabajo;
-
 	@Column(name = "fecha")
 	@Temporal(TemporalType.DATE)
 	private Date fecha;
-
 	@ManyToOne
 	@NotNull
 	@JoinColumn(name = "cultivo_idcultivo")

@@ -5,20 +5,14 @@ package com.uniquindio.FincApp.model;
 
 import java.io.Serializable;
 import java.util.Date;
-import java.util.List;
-
-import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
-import javax.persistence.OneToMany;
 import javax.persistence.Table;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
-
-import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.sun.istack.NotNull;
 
 /**
@@ -34,43 +28,33 @@ public class Employee implements Serializable {
 
 	@Id
 	private Long cedula;
-
 	@NotNull
 	@Column(nullable = false)
 	private String nombre;
-
 	@Column(nullable = true)
 	private String horario;
-
 	@NotNull
 	@Column(nullable = false)
 	private String apellido;
-
 	@NotNull
 	@Column(nullable = false)
 	private Long sueldo;
-
 	@Column(nullable = true)
 	private int edad;
-
 	@ManyToOne
 	@NotNull
 	@JoinColumn(name = "finca_idfinca")
 	private Estate finca;
-
 	@ManyToOne
 	@NotNull
 	@JoinColumn(name = "cultivo_idcultivo")
 	private Cultivation cultivo;
-
 	@Column(name = "create_at")
 	@Temporal(TemporalType.DATE)
 	private Date createAt;
-
 	@NotNull
 	@Column(nullable = false)
 	private String email;
-
 	@NotNull
 	@Column(nullable = false)
 	private String cargo;

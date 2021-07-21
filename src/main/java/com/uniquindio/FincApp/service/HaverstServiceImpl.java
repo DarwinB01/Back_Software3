@@ -28,12 +28,10 @@ public class HaverstServiceImpl implements IHaverstService {
 	ObjectMapper objectMapper;
 	@Autowired
 	private ICultivationDao cultivoDao;
-
 	@Override
 	public void deleteById(Long id) {
 		haverstDao.deleteById(id);
 	}
-
 	@Override
 	public List<HarvestDTO> findAll() {
 		List<Harvest> cosecha = new ArrayList<>();

@@ -52,14 +52,12 @@ public class ControlController {
 
 		ControlDTO controlUpdated = null;
 		if (controlDTO != null) {
-
 			try {
 				controlDTO.setNombre(peticion.getNombre());
 				controlDTO.setDescripcion(peticion.getDescripcion());
 				controlDTO.setTipo(peticion.getTipo());
 				controlDTO.setPrecio(peticion.getPrecio());
-				controlDTO.setFecha(peticion.getFecha());
-				
+				controlDTO.setFecha(peticion.getFecha());			
 				controlUpdated = controlService.saveControl(controlDTO);
 				return controlUpdated;
 			} catch (DataAccessException e) {
@@ -67,6 +65,5 @@ public class ControlController {
 			}
 		}
 		return controlUpdated;
-	}
-	
+	}	
 }

@@ -2,17 +2,13 @@ package com.uniquindio.FincApp.dto;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonInclude.Include;
-import com.uniquindio.FincApp.model.Employee;
 
 @JsonInclude(Include.NON_NULL)
 public class PositionDTO {
 
 	private Long idcargo;
-
 	private String tipoCargo;
-
 	private Long trabajadorCedula;
-
 	public PositionDTO(Long idcargo, String tipoCargo, Long trabajadorCedula) {
 		super();
 		this.idcargo = idcargo;

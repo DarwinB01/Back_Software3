@@ -25,7 +25,6 @@ public class ControlServiceImpl implements IControlService {
 	private ICultivationDao cultivoDao;
 	@Autowired
 	ObjectMapper objectMapper;
-
 	@Override
 	public void deleteById(Long id) {
 		controlDao.deleteById(id);

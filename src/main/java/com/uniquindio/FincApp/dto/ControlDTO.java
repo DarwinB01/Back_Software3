@@ -9,21 +9,13 @@ import com.fasterxml.jackson.annotation.JsonInclude.Include;
 public class ControlDTO {
 
 	private Long idcontrol;
-
 	private String tipo;
-
 	private String nombre;
-
 	private String descripcion;
-
 	private Date fecha;
-
 	private Long precio;
-
-	private Long cultivo;
-	
-	private String nombreCultivo;
-	
+	private Long cultivo;	
+	private String nombreCultivo;	
 	private String fechaFinal;
 
 	public ControlDTO(Long idcontrol, String tipo, String nombre, String descripcion, Date fecha, Long precio,
