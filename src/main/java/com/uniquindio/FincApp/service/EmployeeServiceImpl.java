@@ -33,8 +33,7 @@ public class EmployeeServiceImpl implements IEmployeeService {
 	@Autowired
 	private ICultivationDao cultivoDao;
 	@Autowired
-	ObjectMapper objectMapper;
-	
+	ObjectMapper objectMapper;	
 	@Autowired
     private JavaMailSender mailSender;
 
