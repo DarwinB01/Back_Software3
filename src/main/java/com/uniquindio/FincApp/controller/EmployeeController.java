@@ -26,6 +26,11 @@ public class EmployeeController {
 	@Autowired
 	private IEmployeeService employeeService;
 
+	/**
+	 * METODO QUE PERMITE AGREGAR TRABAJADORES
+	 * @param employee
+	 * @return
+	 */
 	@PostMapping("/trabajadores")
 	public EmployeeDTO saveEmployee(@RequestBody EmployeeDTO employee) {
 		employee.setCreateAt(new Date());
